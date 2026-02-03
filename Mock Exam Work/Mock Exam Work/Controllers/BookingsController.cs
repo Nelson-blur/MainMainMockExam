@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -24,14 +25,12 @@ namespace Mock_Exam_Work.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var userBookingsData = await _context.Bookings.Where(x => x.UserId == userId).ToListAsync();
+            var userBookingsData = await _context.Bookings.Where( b  => b.UserId == userId ).ToListAsync();
             return View(userBookingsData);
         }
+        
 
-        {
-            var applicationDbContext = _context.Bookings.Include(b => b.Room);
-            return View(await applicationDbContext.ToListAsync());
-        }
+        
 
         // GET: Bookings/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -66,6 +65,16 @@ namespace Mock_Exam_Work.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("BookingsId,UserId,RoomsId,CheckInDate,CheckOutDate,Status,BookingCreatedAt,SpecialRequest,IsPayed,PayedAt")] Bookings bookings)
         {
+            var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (UserId == null)
+            {
+                return NotFound();
+            }
+            bookings.UserId = UserId;
+            ModelState.Remove("UserId");
+            
+          
             if (ModelState.IsValid)
             {
                 _context.Add(bookings);
@@ -78,6 +87,9 @@ namespace Mock_Exam_Work.Controllers
 
         // GET: Bookings/Edit/5
         public async Task<IActionResult> Edit(int? id)
+
+        
+        
         {
             if (id == null)
             {

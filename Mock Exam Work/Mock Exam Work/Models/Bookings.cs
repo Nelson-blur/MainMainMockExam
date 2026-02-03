@@ -13,7 +13,7 @@
         public required bool IsPayed { get; set; }
         public required DateTime PayedAt { get; set; }
 
-        public required Rooms Room {  get; set; }
+        public Rooms Room {  get; set; }
 
 
     }

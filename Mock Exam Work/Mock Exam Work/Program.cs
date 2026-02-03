@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Mock_Exam_Work.Data;
+using Mock_Exam_Work.Data.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,21 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+//Automatically seed the data if the database is empty
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    SeedData.SeedRoomsAsync(context); // seed data if necessary
+}
+
+using (var scope = app.Services.CreateScope())
+{
+
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await SeedData.SeedRoomsAsync(context);
+    await SeedData.SeedBookingsAsync(context);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
