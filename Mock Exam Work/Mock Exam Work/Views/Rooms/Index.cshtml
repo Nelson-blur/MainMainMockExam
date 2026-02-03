@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Mock_Exam_Work.Models.Rooms>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomsDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HourlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAvailable)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomsDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HourlyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAvailable)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RoomsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RoomsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RoomsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
