@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\723490\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
+    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
   },
   "projects": {
-    "C:\\Users\\723490\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
+    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\723490\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "projectUniqueName": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
         "projectName": "Mock Exam Work",
-        "projectPath": "C:\\Users\\723490\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "projectPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
         "packagesPath": "C:\\Users\\723490\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\723490\\Mock Exam Work\\Mock Exam Work\\obj\\",
+        "outputPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
