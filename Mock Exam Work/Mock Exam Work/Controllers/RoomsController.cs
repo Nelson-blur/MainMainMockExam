@@ -22,6 +22,7 @@ namespace Mock_Exam_Work.Controllers
         // GET: Rooms
         public async Task<IActionResult> Index()
         {
+            var availableRooms = await _context.Rooms.Where(r => r.IsAvailable).OrderBy(r => r.City).ThenBy(r => r.HourlyRate).ToListAsync();
             return View(await _context.Rooms.ToListAsync());
         }
 

@@ -25,9 +25,17 @@ namespace Mock_Exam_Work.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var userBookingsData = await _context.Bookings.Where( b  => b.UserId == userId ).ToListAsync();
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToPage("/Account/Login", new { area = "Identity" });
+            }
+            var userBookingsData = await _context.Bookings
+                .Where(b => b.UserId == userId)
+                .Include(b => b.Room)
+                .ToListAsync();
             return View(userBookingsData);
         }
+        
         
 
         

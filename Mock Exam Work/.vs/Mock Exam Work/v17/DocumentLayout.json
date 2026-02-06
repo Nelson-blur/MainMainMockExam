@@ -3,43 +3,67 @@
   "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\data\\migrations\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\data\\migrations\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\mock exam work.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\controllers\\staffscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{387B6D74-7CA9-4009-9BEE-BDE7FE395660}|Mock Exam Work\\Mock Exam Work.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\723490\\github\\mainmainmockexam\\mock exam work\\mock exam work\\data\\migrations\\20260203112243_thirdcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -55,23 +79,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20260203112243_ThirdCreate.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
-              "RelativeDocumentMoniker": "Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
-              "RelativeToolTip": "Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T11:22:43.941Z"
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T13:24:50.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ContactUs.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\ContactUs.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Home\\ContactUs.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\ContactUs.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Home\\ContactUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T13:22:03.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T13:21:32.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T13:20:24.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Home\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T13:20:19.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Bookings\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "Mock Exam Work\\Views\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T12:55:34.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Rooms\\Create.cshtml",
               "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Rooms\\Create.cshtml",
@@ -79,23 +169,25 @@
               "RelativeToolTip": "Mock Exam Work\\Views\\Rooms\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T10:51:32.946Z"
+              "WhenOpened": "2026-02-03T10:51:32.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Program.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Program.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Program.cs",
               "RelativeToolTip": "Mock Exam Work\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAASwBwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T10:43:12.287Z"
+              "WhenOpened": "2026-02-03T10:43:12.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "Details.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Rooms\\Details.cshtml",
               "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Rooms\\Details.cshtml",
@@ -107,32 +199,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "SeedData.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\SeedData.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Data\\Migrations\\SeedData.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\SeedData.cs",
               "RelativeToolTip": "Mock Exam Work\\Data\\Migrations\\SeedData.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowF4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T09:55:23.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Rooms\\Index.cshtml",
               "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Rooms\\Index.cshtml",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Rooms\\Index.cshtml",
               "RelativeToolTip": "Mock Exam Work\\Views\\Rooms\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T09:45:04.065Z"
+              "WhenOpened": "2026-02-03T09:45:04.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Rooms\\Edit.cshtml",
               "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Rooms\\Edit.cshtml",
@@ -140,11 +233,12 @@
               "RelativeToolTip": "Mock Exam Work\\Views\\Rooms\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T09:45:00.057Z"
+              "WhenOpened": "2026-02-03T09:45:00.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Rooms.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Rooms.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Models\\Rooms.cs",
@@ -152,11 +246,12 @@
               "RelativeToolTip": "Mock Exam Work\\Models\\Rooms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:37:28.569Z"
+              "WhenOpened": "2026-02-03T09:37:28.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Models\\ErrorViewModel.cs",
@@ -164,35 +259,102 @@
               "RelativeToolTip": "Mock Exam Work\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:37:26.587Z"
+              "WhenOpened": "2026-02-03T09:37:26.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Models\\Staff.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Staff.cs",
+              "RelativeToolTip": "Mock Exam Work\\Models\\Staff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:20:08.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "BookingsController.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Controllers\\BookingsController.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\BookingsController.cs",
               "RelativeToolTip": "Mock Exam Work\\Controllers\\BookingsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:21:37.066Z"
+              "WhenOpened": "2026-02-03T09:21:37.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Controllers\\RoomsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Mock Exam Work\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wBgAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:45:13.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StaffsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\StaffsController.cs",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Controllers\\StaffsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\StaffsController.cs",
+              "RelativeToolTip": "Mock Exam Work\\Controllers\\StaffsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:07:04.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Mock Exam Work",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Mock Exam Work.csproj",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+              "RelativeToolTip": "Mock Exam Work\\Mock Exam Work.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-06T12:32:05.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Bookings.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Bookings.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Models\\Bookings.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Bookings.cs",
               "RelativeToolTip": "Mock Exam Work\\Models\\Bookings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:20:12.333Z"
+              "WhenOpened": "2026-02-03T09:20:12.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
+              "Title": "20260203112243_ThirdCreate.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
+              "RelativeDocumentMoniker": "Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
+              "RelativeToolTip": "Mock Exam Work\\Data\\Migrations\\20260203112243_ThirdCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T11:22:43.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Views\\Bookings\\Create.cshtml",
               "RelativeDocumentMoniker": "Mock Exam Work\\Views\\Bookings\\Create.cshtml",
@@ -204,19 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Mock Exam Work\\Controllers\\RoomsController.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Mock Exam Work\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:45:13.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "20260203092059_DoualCreate.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Data\\Migrations\\20260203092059_DoualCreate.cs",
               "RelativeDocumentMoniker": "Mock Exam Work\\Data\\Migrations\\20260203092059_DoualCreate.cs",
@@ -225,18 +375,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T09:21:00.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Staff.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Staff.cs",
-              "RelativeDocumentMoniker": "Mock Exam Work\\Models\\Staff.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Models\\Staff.cs",
-              "RelativeToolTip": "Mock Exam Work\\Models\\Staff.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:20:08.425Z"
             }
           ]
         }

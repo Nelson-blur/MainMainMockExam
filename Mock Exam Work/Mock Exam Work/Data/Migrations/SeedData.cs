@@ -11,10 +11,10 @@ namespace Mock_Exam_Work.Data.Migrations
         {
             if (!await context.Rooms.AnyAsync())
             {
-                var Rooms = new List<Rooms>
+                var rooms = new List<Rooms>
                 {
                     new Rooms
-                    { RoomsName = "Room 1",
+                    { RoomsName = "Meeting Room",
                       RoomsDescription = "A spacious conference room.",
                       Capacity = 20,
                       HourlyRate = 50.0f,
@@ -22,7 +22,7 @@ namespace Mock_Exam_Work.Data.Migrations
                       IsAvailable = true
                     },
                     new Rooms
-                    { RoomsName = "Room 2",
+                    { RoomsName = "Conference Room",
                       RoomsDescription = "A cozy meeting room.",
                       Capacity = 10,
                       HourlyRate = 30.0f,
@@ -31,74 +31,141 @@ namespace Mock_Exam_Work.Data.Migrations
                     },
                     // Add more rooms as needed
                 };
-                await context.Rooms.AddRangeAsync(Rooms);
+                await context.Rooms.AddRangeAsync(rooms);
                 await context.SaveChangesAsync();
             }
         }
-        public static async Task SeedBookingsAsync(ApplicationDbContext context)
+        public static async Task SeedBookingsAsync(ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             if (!await context.Bookings.AnyAsync())
             {
-                var Room1 = await context.Rooms.FirstOrDefaultAsync(r => r.RoomsName == "Room 1");
-                if (Room1 == null)
-                    return;
-
-                var booking = new Bookings
+                var users = await userManager.Users.Take(2).ToListAsync();
+                var rooms = await context.Rooms.Take(2).ToListAsync();
+                if (users.Count >= 2 && rooms.Count >= 2)
                 {
-                    RoomsId = Room1.RoomsId,
-                    BookingCreatedAt = DateTime.Now,
-                    CheckInDate = DateTime.Now.AddHours(1),
-                    CheckOutDate = DateTime.Now.AddHours(2),
-                    Status = "Pending",
-                    SpecialRequest = "None",
-                    IsPayed = false,
-                    PayedAt = DateTime.MinValue,
-                    UserId = "sample-user-id" // Replace with actual user ID
-                };
-                await context.Bookings.AddAsync(booking);
-                await context.SaveChangesAsync();
-            }
-        }
-        public static async Task SeedInstallationAsync(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager)
-        {
-            using var scope = serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                    var bookings = new List<Bookings>
+                    {
+                        new Bookings
+                        {
+                            UserId = users[0].Id,
+                            RoomsId = rooms[0].RoomsId,
+                            CheckInDate = DateTime.Now.AddDays(1),
+                            CheckOutDate = DateTime.Now.AddDays(1),
+                            Status = "Pending",
+                            BookingCreatedAt = DateTime.Now,
+                            SpecialRequest = "None",
+                            IsPayed = false,
+                            PayedAt = DateTime.MinValue
 
-            if (!context.Installations.Any())
-            {
-                var user1 = await userManager.FindByEmailAsync("user1@example.com");
-                var user2 = await userManager.FindByEmailAsync("user2@example.com");
+                        },
+                        new Bookings
+                        {
+                            UserId = users[1].Id,
+                            RoomsId = rooms[1].RoomsId,
+                            CheckInDate = DateTime.Now.AddDays(2),
+                            CheckOutDate = DateTime.Now.AddDays(2),
+                            Status = "Confirmed",
+                            BookingCreatedAt = DateTime.Now,
+                            SpecialRequest = "Confirmed",
+                            IsPayed = true,
+                            PayedAt = DateTime.Now
 
-                if (user1 == null || user2 == null)
-                {
-                    var installations = new List<Installations>
 
-            {
-                new Installations
-                {
-                    Name = "Site Alpha",
-                    Email = "sitealpha@example.com",
-                    Desciption = "Test install 1",
-                    BindingAddress = "123 Main st",
-                    City = "London",
-                    UserId = user1.Id,
-                },
-                new Installations
-                {
-                    Name = "Site Beta",
-                    Email = "sitebeta@example.com",
-                    Desciption = "Test install 2",
-                    BindingAddress = "678 State Rd",
-                    City = "Birmingham",
-                    UserId = user2.Id,
-                }
-            };
-                    context.Installations.AddRangeAsync(installations);
+                        }
+                    };
+                    await context.Bookings.AddRangeAsync(bookings);
                     await context.SaveChangesAsync();
                 }
             }
+        }
+        public static async Task SeedStaffAsync(IServiceProvider serviceProvider)
+        {
+            using var context = new ApplicationDbContext(serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>());
 
+
+            if (!await context.Staff.AnyAsync())
+            {
+                await context.Staff.AddRangeAsync(
+                    new Staff
+                    {
+                        JobTitle = "Manager",
+                        StaffFullName = "John Doe",
+                        Bio = "Experienced manager with a background in hospitality."
+                    },
+                    new Staff
+                    {
+                        JobTitle = "Receptionist",
+                        StaffFullName = "Jane Smith",
+                        Bio = "Friendly receptionist with excellent customer service skills."
+                    }
+                    );
+                await context.SaveChangesAsync();
+
+
+            }
+        }
+        public static async Task SeedUsersAsync(UserManager<IdentityUser> userManager)
+        {
+            var usersToCreate = new List<(string Email, string Password, string Role)>
+            {
+                ("customer1@example.com", "Customer@123", "User"),
+                ("customer2@example.com", "Customer@123", "User"),
+                ("manager1@example.com", "Manager@123", "Manager"),
+                ("manager2@example.com", "Manager@123", "Manager")
+            };
+            foreach (var (email, password, role) in usersToCreate)
+            {
+                if (await userManager.FindByEmailAsync(email) == null)
+                {
+                    var user = new IdentityUser { UserName = email, Email = email, EmailConfirmed = true };
+                    var result = await userManager.CreateAsync(user, password);
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(user, role);
+                        Console.WriteLine($"Created user {email} with role {role}");
+                    }
+                }
+            }
+        }
+
+        public static async Task SeedRoles(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        {
+            //Create Roles if they dont exist
+            string[] roleNames = { "Admin", "Manager", "User" };
+            foreach (var rolename in roleNames)
+            {
+                var roleExist = await roleManager.RoleExistsAsync(rolename);
+                if (!roleExist)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(rolename));
+                }
+            }
+
+            //Craate an Admin user if it doesnt exist
+            var adminUser = await userManager.FindByEmailAsync("admin@example.com");
+            if (adminUser == null)
+            {
+                adminUser = new IdentityUser { UserName = "admin@example.com", Email = "admin@example.com", EmailConfirmed = true };
+                await userManager.CreateAsync(adminUser, "Admin@123");
+
+            }
+            //Add admin role if not already assigned
+            if(!await userManager.IsInRoleAsync(adminUser, "Admin"))
+            {
+                await userManager.AddToRoleAsync(adminUser, "Admin");
+            }
+        }
+        public static async Task SeedAllAsync(IServiceProvider serviceProvider,UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        {
+            var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
+            
+            await SeedRoles(serviceProvider, userManager, roleManager);
+            await SeedUsersAsync(userManager);
+            await SeedRoomsAsync(context);
+            await SeedBookingsAsync(context, userManager);
+            await SeedStaffAsync(serviceProvider);
         }
     }
 }
-    
+        
+           

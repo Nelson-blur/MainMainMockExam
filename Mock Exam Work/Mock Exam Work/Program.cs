@@ -12,51 +12,54 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
-//Automatically seed the data if the database is empty
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    SeedData.SeedRoomsAsync(context); // seed data if necessary
-}
-
-using (var scope = app.Services.CreateScope())
-{
-
-    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    var rolemanager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+    await SeedData.SeedRoles(services, userManager, rolemanager);
+    await SeedData.SeedUsersAsync(userManager);
     await SeedData.SeedRoomsAsync(context);
-    await SeedData.SeedBookingsAsync(context);
+    await SeedData.SeedBookingsAsync(context, userManager);
+    await SeedData.SeedStaffAsync(services);
 }
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseMigrationsEndPoint();
-}
-else
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
 
-app.UseHttpsRedirection();
-app.UseRouting();
+    //Automatically seed the data if the database is empty
 
-app.UseAuthorization();
 
-app.MapStaticAssets();
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseMigrationsEndPoint();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Home/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    app.UseHttpsRedirection();
+    app.UseRouting();
 
-app.MapRazorPages()
-   .WithStaticAssets();
+    app.UseAuthorization();
 
-app.Run();
+    app.MapStaticAssets();
+
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}")
+        .WithStaticAssets();
+
+    app.MapRazorPages()
+       .WithStaticAssets();
+
+    app.Run();
+
