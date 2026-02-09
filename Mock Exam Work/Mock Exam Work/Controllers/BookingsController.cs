@@ -29,12 +29,14 @@ namespace Mock_Exam_Work.Controllers
             {
                 return RedirectToPage("/Account/Login", new { area = "Identity" });
             }
-            var userBookingsData = await _context.Bookings
-                .Where(b => b.UserId == userId)
-                .Include(b => b.Room)
-                .ToListAsync();
+           
+            var userBookingsData = User.IsInRole("Admin")
+                ? await _context.Bookings.Include(b => b.Room).ToListAsync()  // Admin sees all
+                : await _context.Bookings.Where(b => b.UserId == userId).Include(b => b.Room).ToListAsync();  // Users see only theirs
+
             return View(userBookingsData);
         }
+        
         
         
 
@@ -81,8 +83,11 @@ namespace Mock_Exam_Work.Controllers
             }
             bookings.UserId = UserId;
             ModelState.Remove("UserId");
-            
-          
+
+            bookings.UserId = UserId;
+            ModelState.Remove("UserId");
+            ModelState.Remove("Room");
+
             if (ModelState.IsValid)
             {
                 _context.Add(bookings);
@@ -94,10 +99,10 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Bookings/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        
 
         
-        
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -108,6 +113,11 @@ namespace Mock_Exam_Work.Controllers
             if (bookings == null)
             {
                 return NotFound();
+            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (bookings.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return Forbid(); // User doesn't own this booking and isn't admin
             }
             ViewData["RoomsId"] = new SelectList(_context.Set<Rooms>(), "RoomsId", "RoomsId", bookings.RoomsId);
             return View(bookings);
@@ -123,6 +133,12 @@ namespace Mock_Exam_Work.Controllers
             if (id != bookings.BookingsId)
             {
                 return NotFound();
+            }
+            // Check if user owns this booking or is admin
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (bookings.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return Forbid();
             }
 
             if (ModelState.IsValid)
@@ -164,9 +180,17 @@ namespace Mock_Exam_Work.Controllers
             {
                 return NotFound();
             }
+            // Check if user owns this booking or is admin
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (bookings.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return Forbid();
+            }
 
             return View(bookings);
         }
+
+       
 
         // POST: Bookings/Delete/5
         [HttpPost, ActionName("Delete")]
@@ -176,9 +200,16 @@ namespace Mock_Exam_Work.Controllers
             var bookings = await _context.Bookings.FindAsync(id);
             if (bookings != null)
             {
-                _context.Bookings.Remove(bookings);
+               return NotFound();
+            }
+            // Check if user owns this booking or is admin
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (bookings.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return Forbid();
             }
 
+            _context.Bookings.Remove(bookings);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

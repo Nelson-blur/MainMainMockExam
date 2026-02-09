@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
+    "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
   },
   "projects": {
-    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
+    "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "projectUniqueName": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
         "projectName": "Mock Exam Work",
-        "projectPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "projectPath": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
         "packagesPath": "C:\\Users\\723490\\.nuget\\packages\\",
-        "outputPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\723490\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\obj\\",
+        "outputPath": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,9 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -88,12 +88,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.0, 9.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -102,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

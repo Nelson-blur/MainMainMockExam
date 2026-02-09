@@ -110,8 +110,7 @@ namespace Mock_Exam_Work.Data.Migrations
             {
                 ("customer1@example.com", "Customer@123", "User"),
                 ("customer2@example.com", "Customer@123", "User"),
-                ("manager1@example.com", "Manager@123", "Manager"),
-                ("manager2@example.com", "Manager@123", "Manager")
+                
             };
             foreach (var (email, password, role) in usersToCreate)
             {
@@ -131,7 +130,7 @@ namespace Mock_Exam_Work.Data.Migrations
         public static async Task SeedRoles(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             //Create Roles if they dont exist
-            string[] roleNames = { "Admin", "Manager", "User" };
+            string[] roleNames = { "Admin", "User" };
             foreach (var rolename in roleNames)
             {
                 var roleExist = await roleManager.RoleExistsAsync(rolename);

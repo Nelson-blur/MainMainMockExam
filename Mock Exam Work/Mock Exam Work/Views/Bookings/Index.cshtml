@@ -74,6 +74,8 @@
                 @Html.DisplayFor(modelItem => item.Room.RoomsId)
             </td>
             <td>
+                <a asp-controller="Bookings" asp-action="Create" asp-route-RoomsId="@item.BookingsId">Book Now</a> |
+
                 <a asp-action="Edit" asp-route-id="@item.BookingsId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.BookingsId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.BookingsId">Delete</a>

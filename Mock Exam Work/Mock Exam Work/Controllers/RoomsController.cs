@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Mock_Exam_Work.Data;
 using Mock_Exam_Work.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Mock_Exam_Work.Controllers
 {
+    
     public class RoomsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,11 +22,50 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Rooms
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchCity, float? minRate, float? maxRate, int? minCapacity, bool? availableOnly)
         {
-            var availableRooms = await _context.Rooms.Where(r => r.IsAvailable).OrderBy(r => r.City).ThenBy(r => r.HourlyRate).ToListAsync();
-            return View(await _context.Rooms.ToListAsync());
+            var rooms = _context.Rooms.AsQueryable();
+
+            // Filter by city
+            if (!string.IsNullOrEmpty(searchCity))
+            {
+                rooms = rooms.Where(r => r.City.Contains(searchCity));
+            }
+
+            // Filter by minimum rate
+            if (minRate.HasValue)
+            {
+                rooms = rooms.Where(r => r.HourlyRate >= minRate.Value);
+            }
+
+            // Filter by maximum rate
+            if (maxRate.HasValue)
+            {
+                rooms = rooms.Where(r => r.HourlyRate <= maxRate.Value);
+            }
+
+            // Filter by minimum capacity
+            if (minCapacity.HasValue)
+            {
+                rooms = rooms.Where(r => r.Capacity >= minCapacity.Value);
+            }
+
+            // Filter by availability
+            if (availableOnly.HasValue && availableOnly.Value)
+            {
+                rooms = rooms.Where(r => r.IsAvailable);
+            }
+
+            // Pass filter values to view for form persistence
+            ViewBag.SearchCity = searchCity;
+            ViewBag.MinRate = minRate;
+            ViewBag.MaxRate = maxRate;
+            ViewBag.MinCapacity = minCapacity;
+            ViewBag.AvailableOnly = availableOnly;
+
+            return View(await rooms.OrderBy(r => r.City).ThenBy(r => r.HourlyRate).ToListAsync());
         }
+
 
         // GET: Rooms/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -45,6 +86,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Rooms/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -67,6 +109,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Rooms/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,6 +130,7 @@ namespace Mock_Exam_Work.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("RoomsId,RoomsName,RoomsDescription,Capacity,HourlyRate,City,IsAvailable")] Rooms rooms)
         {
             if (id != rooms.RoomsId)
@@ -118,6 +162,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Rooms/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -138,6 +183,7 @@ namespace Mock_Exam_Work.Controllers
         // POST: Rooms/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var rooms = await _context.Rooms.FindAsync(id);

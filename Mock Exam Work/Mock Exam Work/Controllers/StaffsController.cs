@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Mock_Exam_Work.Data;
 using Mock_Exam_Work.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Mock_Exam_Work.Controllers
 {
+    
     public class StaffsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -44,6 +46,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Staffs/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +69,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Staffs/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -86,6 +90,7 @@ namespace Mock_Exam_Work.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("StaffId,JobTitle,StaffFullName,Bio")] Staff staff)
         {
             if (id != staff.StaffId)
@@ -117,6 +122,7 @@ namespace Mock_Exam_Work.Controllers
         }
 
         // GET: Staffs/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +143,7 @@ namespace Mock_Exam_Work.Controllers
         // POST: Staffs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var staff = await _context.Staff.FindAsync(id);
