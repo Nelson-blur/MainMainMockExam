@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mock Exam Work")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f27a92e10b750a0e1bebc73a466466dfccf29b1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d669e97040ea81d5419566a4ecb0d806acce54be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mock Exam Work")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mock Exam Work")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
