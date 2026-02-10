@@ -1,4 +1,4 @@
-﻿namespace Mock_Exam_Work.Models
+﻿ namespace Mock_Exam_Work.Models
 {
     public class Rooms
     {

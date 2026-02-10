@@ -1,13 +1,47 @@
 ﻿@model IEnumerable<Mock_Exam_Work.Models.Rooms>
-
 @{
     ViewData["Title"] = "Rooms";
 }
-
 <h1>Rooms</h1>
 
+<!-- ========== ADDED FILTER BUTTONS - START ========== -->
+<div class="mb-4">
+    <h5>Filter by City:</h5>
+    <a asp-action="Index" class="btn btn-outline-primary btn-sm">All Cities</a>
+    <a asp-action="Index" asp-route-searchCity="New York" class="btn btn-outline-secondary btn-sm">New York</a>
+    <a asp-action="Index" asp-route-searchCity="Los Angeles" class="btn btn-outline-secondary btn-sm">Los Angeles</a>
+</div>
+
+<div class="mb-4">
+    <h5>Filter by Price:</h5>
+    <a asp-action="Index" class="btn btn-outline-primary btn-sm">All Prices</a>
+    <a asp-action="Index" asp-route-maxRate="30" class="btn btn-outline-success btn-sm">Under $30/hr</a>
+    <a asp-action="Index" asp-route-minRate="30" asp-route-maxRate="50" class="btn btn-outline-info btn-sm">$30-$50/hr</a>
+    <a asp-action="Index" asp-route-minRate="50" class="btn btn-outline-warning btn-sm">Over $50/hr</a>
+</div>
+
+<div class="mb-4">
+    <h5>Filter by Capacity:</h5>
+    <a asp-action="Index" class="btn btn-outline-primary btn-sm">All Sizes</a>
+    <a asp-action="Index" asp-route-minCapacity="10" class="btn btn-outline-secondary btn-sm">10+ People</a>
+    <a asp-action="Index" asp-route-minCapacity="20" class="btn btn-outline-secondary btn-sm">20+ People</a>
+</div>
+
+<div class="mb-4">
+    <h5>Availability:</h5>
+    <a asp-action="Index" class="btn btn-outline-primary btn-sm">All Rooms</a>
+    <a asp-action="Index" asp-route-availableOnly="true" class="btn btn-outline-success btn-sm">Available Only</a>
+</div>
+<hr />
+<!-- ========== ADDED FILTER BUTTONS - END ========== -->
+
 <p>
-    <a asp-action="Create">Create New</a>
+    <!-- ========== CHANGED: Added Admin check ========== -->
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create">Create New</a>
+    }
+    <!-- ========== END CHANGE ========== -->
 </p>
 <table class="table">
     <thead>
@@ -34,32 +68,43 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.RoomsName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RoomsDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Capacity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HourlyRate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsAvailable)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.RoomsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.RoomsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.RoomsId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomsName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomsDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HourlyRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Capacity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsAvailable)
+                </td>
+                <td>
+                    <!-- ========== CHANGED: Added Admin checks for Edit/Delete ========== -->
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.RoomsId">Edit</a>
+                        <text>|</text>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.RoomsId">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <text>|</text>
+                        <a asp-action="Delete" asp-route-id="@item.RoomsId">Delete</a>
+                    }
+                    <!-- ========== END CHANGE ========== -->
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

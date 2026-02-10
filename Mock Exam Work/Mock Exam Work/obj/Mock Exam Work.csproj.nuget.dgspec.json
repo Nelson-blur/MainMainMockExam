@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
+    "C:\\Users\\nelso\\Documents\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {}
   },
   "projects": {
-    "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
+    "C:\\Users\\nelso\\Documents\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "projectUniqueName": "C:\\Users\\nelso\\Documents\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
         "projectName": "Mock Exam Work",
-        "projectPath": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
-        "packagesPath": "C:\\Users\\723490\\.nuget\\packages\\",
-        "outputPath": "H:\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\obj\\",
+        "projectPath": "C:\\Users\\nelso\\Documents\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\Mock Exam Work.csproj",
+        "packagesPath": "C:\\Users\\nelso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nelso\\Documents\\GitHub\\MainMainMockExam\\Mock Exam Work\\Mock Exam Work\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\723490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nelso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
